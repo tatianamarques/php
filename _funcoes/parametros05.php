@@ -1,0 +1,20 @@
+<?php 
+/*$pessoa = array (
+	'nome'=> 'João',
+	'idade' => 20
+);
+foreach ($pessoa as $value) {
+	echo $value.'<br>';
+}*/
+$pessoa = array (
+	'nome'=> 'João',
+	'idade' => 20
+);
+foreach ($pessoa as &$value) {
+	if (gettype($value)==='integer') $value += 10;
+	echo $value.'<br>';
+}
+
+print_r($pessoa);
+?>
+<!--Lembrar que variável é diferente de parâmetro de função-->
