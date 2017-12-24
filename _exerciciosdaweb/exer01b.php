@@ -12,10 +12,12 @@ $adicao = $n1 + $n2;
 //echo $adicao."<br>";
 
 	If ($adicao > 20){
-	echo $adicao + 8 ."<br>";
+	//echo $adicao + 8 ."<br>";
+		$resultado = $adicao + 8;
 }elseif ($adicao <=20){
-	echo $adicao - 5;
+	//echo $adicao - 5;
+		$resultado = $adicao - 5;
 };
-
+header("Location: index.php?resultado=".$resultado);
 ?>
 

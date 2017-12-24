@@ -1,6 +1,6 @@
 <?php
 //funçoes para sessoes - consultar https://secure.php.net/manual/pt_BR/book.session.php
-session_start();
+//session_start();
 
 echo session_save_path() . "<br>";
 
